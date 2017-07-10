@@ -1,0 +1,7 @@
+
+node_modules
+.vscode
+config/*
+bundles
+.DS_Store
+build/
