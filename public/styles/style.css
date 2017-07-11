@@ -1,0 +1,26 @@
+h3 {
+  text-align: center;
+}
+
+.Menu {
+   -webkit-appearance: menulist-button;
+   height: 50px;
+   width: 100%;
+   text-align-last: center;
+}
+
+.Text {
+  text-align: center;
+}
+
+.List {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+.Btn {
+      background-color:white;
+      text-align: center;
+    }
+

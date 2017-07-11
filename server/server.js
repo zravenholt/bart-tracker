@@ -53,15 +53,14 @@ function xmlToJson(xml) {
 let bartData = {};
 
 let getBART = () => {
-  console.log('retrieving bart data');
   axios.get('http://api.bart.gov/api/etd.aspx?cmd=etd&orig=ALL&key=MW9S-E7SL-26DU-VV8V')
     .then(function(response) {
       let xml = response.data;
       let xmlDOM = new DOMParser().parseFromString(xml, 'text/xml');
       let jsonConverted = xmlToJson(xmlDOM);
       bartData = jsonConverted;
-      console.log('response:', jsonConverted);
     });
+  setTimeout(getBART, 60000);
 };
 
 app.get('/retrieveData', (req, res) => {
