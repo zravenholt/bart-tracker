@@ -159,8 +159,8 @@ class App extends React.Component {
 
     //I use this equation after looking at the regular schedules of
     //southbound trains through the city. Each stop takes approx.
-    //2 minutes to get between.
-    let travelTime = ((end - location) * 2);
+    //1.5 minutes to get between.
+    let travelTime = ((end - location) * 1.5);
     return travelTime;
   }
 
