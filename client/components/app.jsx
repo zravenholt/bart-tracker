@@ -102,7 +102,7 @@ class App extends React.Component {
       let backWait = null;
 
       this.state[stations[0]].etd.forEach((departure) => {
-        while (!foundDeparture) {
+        if (!foundDeparture) {
           if (departure.abbreviation === 'DALY' || departure.abbreviation === 'SFIA') {
             if (departure.estimate[0] !== 'Leaving') {
               backWait = [departure.abbreviation, parseInt(departure.estimate[0].minutes)];
