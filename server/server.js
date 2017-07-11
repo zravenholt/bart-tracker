@@ -9,7 +9,7 @@ let DOMParser = require('xmldom').DOMParser;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../public')));
-app.use('/bundles', express.static(path.join(__dirname, '../bundles')));
+app.use('/bundles', express.static(path.join(__dirname, '../public')));
 
 //credit for this function goes to David Walsh 
 // --> https://davidwalsh.name/convert-xml-json
