@@ -214,7 +214,7 @@ class App extends React.Component {
               <option value='WARM'>Warm Springs/South Fremont</option>
             </select>
           </div> : null}
-        {this.state.endStationAbbr ? <button className='Menu Btn' onClick={this.handleSubmission}>
+        {this.state.endStationAbbr ? <button className='Btn' onClick={this.handleSubmission}>
           Click to See Options!</button> : null}
         {this.state.stationTexts ?
           <div>

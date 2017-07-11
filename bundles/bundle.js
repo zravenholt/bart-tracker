@@ -23979,7 +23979,7 @@ var App = function (_React$Component) {
         ) : null,
         this.state.endStationAbbr ? _react2.default.createElement(
           'button',
-          { className: 'Menu Btn', onClick: this.handleSubmission },
+          { className: 'Btn', onClick: this.handleSubmission },
           'Click to See Options!'
         ) : null,
         this.state.stationTexts ? _react2.default.createElement(
